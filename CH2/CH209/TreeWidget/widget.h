@@ -15,7 +15,7 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
-    void init();
+    void init();                                    //初始化界面
     void updateParentItem(QTreeWidgetItem* item);   //根据子项选中状态更新父项选中状态
 public slots:
     void treeItemChanged(QTreeWidgetItem* item, int column);
